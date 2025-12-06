@@ -10,3 +10,5 @@ class Calculadora:
             raise ValueError("División por cero no permitida")
         return a / b
 # Comentario de prueba para CI
+def test_suma(calc):
+    assert calc.suma(2, 3) == 6  # valor incorrecto a propósito
